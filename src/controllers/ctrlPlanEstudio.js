@@ -26,7 +26,10 @@ ctrl.create = async (req, res) =>{
  
  ctrl.listar = async (req, res) => {
     const planesEstudio = await planEstudio.find()
-    res.render('planEstudio-views/list-planesEstudio', {planEstudio})
+    res.json({
+        ok:true,
+        planesEstudio
+    })
  }
  
 module.exports = ctrl

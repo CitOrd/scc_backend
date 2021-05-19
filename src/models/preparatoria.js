@@ -3,9 +3,11 @@ const {Schema} =mongos;
 const path = require('path')
 
 const preparatoriaSchema = new Schema({
-    filename: {type: String},  
+      
     nombre : {type: String},
-    clave: {type: String}
+    clave: {type: String},
+  
+    filename: {type: String}
     
 })
 

@@ -6,7 +6,7 @@ const materiaSchema = new Schema({
     semestre: {type: Number},
     clave: {type: String },
     especialidad: {type: String},
-    seriacion: {type: [String]}
+   
   
 })
 

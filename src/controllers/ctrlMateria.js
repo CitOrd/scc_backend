@@ -32,7 +32,10 @@ ctrl.update = (req, res) => {
 
 ctrl.list = async (req, res) =>{
     const materias = await materia.find()
-    res.render('materias-views/list-materia', {materia})
+    res.json({
+        ok:true,
+        materias
+    })
 }
 
 module.exports = ctrl

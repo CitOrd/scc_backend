@@ -8,7 +8,7 @@ const helpers = require('../helpers/libs')
 
 ctrl.create = async (req, res) => {
 
-   const imgurl = helpers.randomNumber() 
+     /**const imgurl = helpers.randomNumber() 
    const imageTempPath = req.files.path
    const ext = path.extname(req.files.originalname).toLowerCase()
    const targetPath = path.resolve(`src/public/upload/${imgurl}${ext}`) 
@@ -17,14 +17,18 @@ ctrl.create = async (req, res) => {
    if(ext === '.png' || ext === '.jpg'  ){
         fs.rename(imageTempPath, targetPath)
           const newPreparatoria = new preparatoria({
-               filename: imgurl+ext,
+              
                nombre: req.body.nombre,
-               clave: req.body.clave
+               clave: req.body.clave,
+               filename: imgurl+ext
           })
+ */
 
-          await capturista.create(newPreparatoria)  
+               const body = req.body
+   
+          await preparatoria.create(body)  
      
-        }       
+           
    
 }
 
