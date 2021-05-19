@@ -1,0 +1,45 @@
+<div class="card">
+    <div class="card-header bg-dark">
+        <h3 class ="card-title text-white">
+            <i class="fab fa-usps"></i> Crea tu poost
+        </h3>
+    </div>
+    <div class="card-body">
+        <form action="/poost" method="POST">
+            <div class="form-group">
+                <input type ="text" name ="title" class="form-control" placeholder="Titulo Publicacion" required>
+            </div>
+            <div class="form-group">
+                <textarea name ="description" rows="10" class="form-control" placeholder="Que quieres decir?" required></textarea>
+            </div>
+            <div class="form-group">
+                <button class="btn btn-success">
+                    <i class="fas fa-share"></i> Publicar
+                </button>
+            </div>
+             <div class="form-group">
+                <div class="input-group">
+                    <div class="custome-file">
+                        <input type="file" name="filename" class="custome-file-input" id="inputGroup" aria-describedby="inputGroupFileAddom">
+                        <label class="custome-file-label" for="inputGroupFileAddom">elige el archivo</label>
+                    </div>
+                </div>
+            </div>
+
+
+        </form>
+    </div>
+</div>
+<div class="card mt-2">
+    <div class="card-header bg-dark text-white">
+        <h3><i class="fas fa-bullhorn"></i> Recent Uploads</h3>
+    </div>
+    <div class="card-body">
+        <div class="row">
+            {{#each poost}}
+            <h4>{{title}}</h4>
+            <p>{{description}}</p> 
+            {{/each}}
+        </div>    
+    </div>
+</div>

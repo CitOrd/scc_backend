@@ -1,0 +1,193 @@
+*{
+	font-family: 'Roboto', sans-serif;
+	margin: 0%;
+	padding: 0%;
+}
+
+header{
+	text-align: center;
+	background-color: #52E188;
+	padding: 20px;
+}
+
+header > h1{
+	font-size: 35px;
+}
+
+header > img{
+	width: 50px;
+}
+
+nav{
+    position: absolute;
+    top: 140px;
+    left: 0;
+    width: 250px;
+    height: calc(100% - 154px);
+    border: 1px solid silver;
+
+}
+
+.navbar{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	background-color: #C6C6C6;
+	list-style: none;
+	text-align: center;
+}
+
+.navbar > li{
+	display: inline-block;
+	padding: 15px 30px;
+}
+
+.navbar > li > a{
+	text-decoration: none;
+	color: #6F6F6F;
+}
+
+.navbar > li > a:hover{
+	color: white;
+	transition: 1s;
+}
+
+
+main{
+	background-color: #838383;
+	padding: 80px;
+}
+
+form{
+	width: 380px;
+	margin: 0 auto;
+	background-color: #9D9D9D;
+	padding: 15px;
+	color: white;
+	border-radius: 5px;
+	font-size: 14px;
+}
+
+form > h2{
+	text-align: center;
+	font-size: 25px;
+}
+
+form > h3{
+	text-align: center;
+	font-size: 16px;
+}
+
+.button, .field, .button-file{
+	border: 0px;
+	outline: none;
+}
+
+.button-file{
+	width: 285px;
+	padding: 15px 10px;
+	border-radius: 3px;
+	margin: 5%;
+	background-color: #A7A7A7;
+}
+
+.button{
+	width: 285px;
+	padding: 15px 10px;
+	border-radius: 3px;
+	margin: 5%;
+	background-color: #52E188;
+}
+
+.button:hover{
+	background-color: #45BC72;
+	transition: 1s;
+}
+
+.field{
+	border: solid 1px #ccc;
+	padding: 8px;
+	width: 95%;
+	text-align: center;
+}
+
+.field:focus{
+	border-color: #52E188;
+}
+
+.center-content{
+	text-align: center;
+}
+
+footer{
+	padding: 8px;
+	background-color: #6F6F6F;
+	text-align: center;
+}
+
+/* InicioMateriaPlanEstudio*/
+.main-materiaplanestudio{
+	padding: 13%;
+}
+
+.contenido-materiaplanestudio{
+	width: 500px;
+	margin: 0 auto;
+	background-color: #9D9D9D;
+	padding: 15px;
+	color: white;
+	border-radius: 5px;
+	font-size: 14px;
+}
+
+.contenido-materiaplanestudio > h2{
+	text-align: center;
+	font-size: 25px;
+	padding: 10px;
+}
+
+.contenido-materiaplanestudio > p{
+	text-align: center;
+	font-size: 16px;
+}
+
+/*MATERIAS ACM*/
+.menu-materias-acm{
+	width: 500px;
+	margin: 0 auto;
+	background-color: #9D9D9D;
+	padding: 15px;
+	color: white;
+	border-radius: 5px;
+	font-size: 14px;
+}
+
+.menu-materias-acm > h2{
+	text-align: center;
+	font-size: 25px;
+	padding: 10px;
+}
+
+.menu-materias-acm > h3{
+	text-align: center;
+	font-size: 16px;
+}
+
+.center-btnmacm{
+	text-align: center;
+}
+
+.button-btnmacm{
+	width: 285px;
+	padding: 15px 10px;
+	border-radius: 3px;
+	margin: 10px;
+	background-color: #52E188;
+	border: 0px;
+	outline: none;
+}
+
+.button-btnmacm:hover{
+	background-color: #45BC72;
+	transition: 1s;
+}
