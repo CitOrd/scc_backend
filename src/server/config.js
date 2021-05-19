@@ -20,6 +20,7 @@ module.exports = app=>{
     app.set('views', path.join(__dirname, '../views'))
 
     app.use(corss({ origin: true, credentials: true }));
+    
     app.engine('.hbs', exphbs({
         defaultLayout: 'main',
         partialsDir: path.join(app.get('views'), 'partials'),

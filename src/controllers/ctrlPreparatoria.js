@@ -26,7 +26,16 @@ ctrl.create = async (req, res) => {
 
                const body = req.body
    
-          await preparatoria.create(body)  
+          await preparatoria.create(body).then(preparatoriDB=>{
+               res.json({
+                    ok:true,
+                    preparatoriDB
+               }).catch(err=>{
+                    res.json({
+                         err
+                    });
+               });
+          });
      
            
    
