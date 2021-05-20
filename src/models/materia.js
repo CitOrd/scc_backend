@@ -3,11 +3,10 @@ const {Schema} =mongos;
 
 const materiaSchema = new Schema({
     titulo : {type: String},
-    semestre: {type: Number},
     clave: {type: String },
-    especialidad: {type: String},
-   
-  
+    semestre: {type: String},
+    seriacion: {type: String},
+    matSeriada: {type: String}    
 })
 
 
